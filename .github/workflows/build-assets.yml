@@ -1,6 +1,6 @@
 name: build-assets
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build-assets:
