@@ -16,11 +16,11 @@ class ToolServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'booking-calendar');
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'fullcalendar');
+        $this->mergeConfigFrom(__DIR__ . '/../config/booking-calendar.php', 'booking_calendar');
 
         Nova::serving(function (ServingNova $event) {
             Nova::provideToScript([
-                'fullCalendarLicenseKey' => config('fullcalendar.license_key'),
+                'fullCalendarLicenseKey' => config('booking_calendar.full_calendar_license_key'),
             ]);
         });
     }
