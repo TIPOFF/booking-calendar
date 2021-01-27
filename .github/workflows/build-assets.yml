@@ -1,0 +1,17 @@
+name: build-assets
+
+on: [push]
+
+jobs:
+  build-assets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - run: npm install
+      - run: npm run prod
