@@ -1,5 +1,5 @@
 # Laravel Nova Booking Calendar
-Laravel Package for Nova Booking Calendar
+Booking calendar tool for Nova.
 
 ## Installation
 
@@ -18,4 +18,12 @@ public function tools()
         new \Tipoff\BookingCalendar\BookingCalendar,
     ];
 }
+```
+
+## Configuration
+
+To use Full Calendar Premium features you must set the license key in your `.env` file:
+
+```dotenv
+FULL_CALENDAR_LICENSE_KEY="your-license-key-here"
 ```
