@@ -1,56 +1,24 @@
 {
     "name": "tipoff/booking-calendar",
-    "description": "Laravel Package for Nova Booking Calendar",
-    "keywords": [
-        "tipoff",
-        "booking-calendar"
-    ],
-    "homepage": "https://github.com/tipoff/booking-calendar",
+    "description": "Booking calendar tool for Nova.",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Tipoff",
-            "email": "packages@tipoff.com",
-            "role": "Developer"
-        }
-    ],
     "require": {
-        "php": "^7.4|^8.0",
-        "spatie/laravel-package-tools": "^1.1",
-        "illuminate/contracts": "^8.0"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^9.3"
+        "php": "^7.4"
     },
     "autoload": {
         "psr-4": {
-            "Tipoff\\BookingCalendar\\": "src",
-            "Tipoff\\BookingCalendar\\Database\\Factories\\": "database/factories"
+            "Tipoff\\BookingCalendar\\": "src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tipoff\\BookingCalendar\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "psalm": "vendor/bin/psalm",
-        "test": "vendor/bin/phpunit --colors=always",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-    },
-    "config": {
-        "sort-packages": true
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Tipoff\\BookingCalendar\\BookingCalendarServiceProvider"
-            ],
-            "aliases": {
-                "BookingCalendar": "Tipoff\\BookingCalendar\\BookingCalendarFacade"
-            }
+                "Tipoff\\BookingCalendar\\ToolServiceProvider"
+            ]
         }
+    },
+    "config": {
+        "sort-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true
