@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  app:
+    image: ambientum/php:7.4-nginx
+    container_name: booking-calendar-tool
+    volumes:
+      - .:/var/www/app
