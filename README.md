@@ -32,6 +32,6 @@ FULL_CALENDAR_LICENSE_KEY="your-license-key-here"
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
-## License
+### License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
