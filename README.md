@@ -22,7 +22,7 @@ public function tools()
 
 ## Configuration
 
-To use Full Calendar Premium features you must set the license key in your `.env` file:
+To use [Full Calendar Premium](https://fullcalendar.io/premium) features you must set the license key in your `.env` file:
 
 ```dotenv
 FULL_CALENDAR_LICENSE_KEY="your-license-key-here"
