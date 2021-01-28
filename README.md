@@ -28,6 +28,10 @@ To use Full Calendar Premium features you must set the license key in your `.env
 FULL_CALENDAR_LICENSE_KEY="your-license-key-here"
 ```
 
+### Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
