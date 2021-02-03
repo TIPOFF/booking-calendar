@@ -1,7 +1,19 @@
 {
     "name": "tipoff/booking-calendar",
     "description": "Booking calendar tool for Nova.",
+    "keywords": [
+        "tipoff",
+        "waivers"
+    ],
+    "homepage": "https://github.com/tipoff/booking-calendar",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Tipoff",
+            "email": "packages@tipoff.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "tipoff/support": "^1.0"
     },
