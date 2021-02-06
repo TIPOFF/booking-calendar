@@ -1,4 +1,4 @@
-/* eslint-disable no-undef, global-require */
+/* eslint-disable global-require */
 Nova.booting((Vue, router) => {
   router.addRoutes([
     {
