@@ -16,69 +16,69 @@
 </template>
 
 <script>
-import FullCalendar from '@fullcalendar/vue'
-import resourceTimeGridPlugin from '@fullcalendar/resource-timegrid'
+import FullCalendar from '@fullcalendar/vue';
+import resourceTimeGridPlugin from '@fullcalendar/resource-timegrid';
 
 export default {
   components: {
-    FullCalendar
+    FullCalendar,
   },
   props: {
     value: {
       type: Object,
-      default: () => {}
+      default: () => {},
     },
     rooms: {
       type: Array,
-      required: true
+      required: true,
     },
     events: {
       type: Array,
-      required: true
+      required: true,
     },
     timeZone: {
       type: String,
-      default: 'utc'
-    }
+      default: 'utc',
+    },
   },
-  data () {
+  data() {
     return {
       calendarPlugins: [
-        resourceTimeGridPlugin
-      ]
-    }
+        resourceTimeGridPlugin,
+      ],
+    };
   },
   methods: {
-    render () {
+    render() {
       this.$refs.fullCalendar
         .getApi()
-        .render()
+        .render();
     },
-    setDate () {
+    setDate() {
       if (this.isCalendarOnTheWrongDate()) {
-        const date = this.value.toDate()
+        const date = this.value.toDate();
 
-        this.calendar.gotoDate(date)
+        this.calendar.gotoDate(date);
       }
     },
-    isCalendarOnTheWrongDate () {
-      const calendarDate = this.calendar.getDate()
+    isCalendarOnTheWrongDate() {
+      const calendarDate = this.calendar.getDate();
 
       return !moment.utc(calendarDate)
-        .isSame(this.value, 'day')
-    }
+        .isSame(this.value, 'day');
+    },
   },
   computed: {
-    licenseKey () {
-      return Nova.config.fullCalendarLicenseKey
+    licenseKey() {
+      return Nova.config.fullCalendarLicenseKey;
     },
-    calendar () {
+    calendar() {
       return this.$refs.fullCalendar
         ? this.$refs.fullCalendar.getApi()
-        : null
-    }
-  }
-}
+        : null;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
