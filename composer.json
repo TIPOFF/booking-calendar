@@ -2,8 +2,7 @@
     "name": "tipoff/booking-calendar",
     "description": "Booking calendar tool for Nova.",
     "keywords": [
-        "tipoff",
-        "waivers"
+        "tipoff"
     ],
     "homepage": "https://github.com/tipoff/booking-calendar",
     "license": "MIT",
@@ -15,7 +14,7 @@
         }
     ],
     "require": {
-        "tipoff/support": "^1.0"
+        "tipoff/support": "^1.0.11"
     },
     "autoload": {
         "psr-4": {
@@ -32,6 +31,12 @@
     "config": {
         "sort-packages": true
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
