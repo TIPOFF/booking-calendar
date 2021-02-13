@@ -18,7 +18,7 @@ class BookingCalendarServiceProvider extends TipoffServiceProvider
             ->hasPolicies([
                 BookingCalendar::class => BookingCalendarPolicy::class,
             ])
-            ->name('remote-monitoring')
+            ->name('booking-calendar')
             ->hasConfigFile();
     }
 }
