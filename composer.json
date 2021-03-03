@@ -14,7 +14,11 @@
         }
     ],
     "require": {
-        "tipoff/support": "^1.4.2"
+        "tipoff/authorization": "^2.2.2",
+        "tipoff/support": "^1.5.3"
+    },
+    "require-dev": {
+        "tipoff/test-support": "^1.1.2"
     },
     "autoload": {
         "psr-4": {
