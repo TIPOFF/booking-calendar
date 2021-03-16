@@ -20,6 +20,10 @@ class ToolServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'booking-calendar');
         $this->mergeConfigFrom(__DIR__ . '/../config/booking-calendar.php', 'booking_calendar');
 
+    /**
+     *
+     * @psalm-suppress UnusedParam
+     */
         Nova::serving(function (ServingNova $event) {
             Nova::provideToScript([
                 'fullCalendarLicenseKey' => config('booking_calendar.full_calendar_license_key'),
