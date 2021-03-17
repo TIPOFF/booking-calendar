@@ -18,7 +18,7 @@ class Authorize
      * @param Closure $next
      * @return Response
      */
-    public function handle($request, $next): Response
+    public function handle($request, $next): ?Response
     {
         $tool = collect(Nova::registeredTools())->first([$this, 'matchesTool']);
 
