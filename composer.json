@@ -15,7 +15,7 @@
     ],
     "require": {
         "tipoff/authorization": "^2.5.5",
-        "tipoff/support": "^1.6.6"
+        "tipoff/support": "^1.7.3"
     },
     "require-dev": {
         "tipoff/test-support": "^1.3.0"
