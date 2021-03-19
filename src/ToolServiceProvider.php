@@ -30,4 +30,11 @@ class ToolServiceProvider extends ServiceProvider
             ]);
         });
     }
+
+    public function register()
+    {
+        Nova::tools([
+            new BookingCalendar(),
+        ]);
+    }
 }
