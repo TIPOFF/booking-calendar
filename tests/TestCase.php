@@ -17,11 +17,11 @@ class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
+            NovaCoreServiceProvider::class,
+            NovaPackageServiceProvider::class,
             SupportServiceProvider::class,
             PermissionServiceProvider::class,
             AuthorizationServiceProvider::class,
-            NovaCoreServiceProvider::class,
-            NovaPackageServiceProvider::class,
             BookingCalendarServiceProvider::class,
         ];
     }
